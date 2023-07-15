@@ -1,6 +1,3 @@
-$ git remote add amvera https://git.amvera.ru/drullez/ds-final-project
-$ git push amvera master
-
 import streamlit as st
 import pandas as pd
 import numpy as np
