@@ -2,9 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-from category_encoders import CatBoostEncoder
 
-# Загрузка моделей
+# загрузка моделей
 with open('model_price.pkl', 'rb') as f:
     model_price = pickle.load(f)
     
@@ -17,10 +16,10 @@ with open('model_decoration.pkl', 'rb') as f:
 with open('model_parking.pkl', 'rb') as f:
     model_parking = pickle.load(f)
 
-# Инициализация кодировщика
-cbe = CatBoostEncoder()
+# инициализация кодировщика
+oe = OrdinalEncoder()
 
-# Ввод данных пользователем
+# ввод данных пользователем
 def user_input_features():
     area = st.number_input('Area', min_value=0)
     rooms = st.number_input('Number of rooms', min_value=0)
@@ -47,23 +46,26 @@ def user_input_features():
 st.title('My prediction application')
 user_data = user_input_features()
 
-# Прогноз
+# прогноз
 material_prediction = model_material.predict(user_data)
 decoration_prediction = model_decoration.predict(user_data)
 parking_prediction = model_parking.predict(user_data)
 
-# Кодирование предсказаний
-encoded_df = pd.DataFrame(
-    np.column_stack([material_prediction, decoration_prediction, parking_prediction]), 
-    columns=['materialType', 'decoration', 'parking'])
+# создание нового датафрейма с предсказанными метками
+predicted_df = user_data.copy()
+predicted_df['materialType'] = material_prediction
+predicted_df['decoration'] = decoration_prediction
+predicted_df['parking'] = parking_prediction
 
-encoded_df = cbe.transform(encoded_df)
+# кодирование предсказаний
+predicted_df[['materialType_encoded', 'decoration_encoded', 'parking_encoded']] = oe.fit_transform(
+    predicted_df[['materialType', 'decoration', 'parking']])
 
-# Объединение пользовательских данных и закодированных предсказаний
-user_data_encoded = pd.concat([user_data, encoded_df], axis=1)
+# подготовка данных для предсказания цены
+price_df = predicted_df.drop(columns = ['materialType','decoration', 'parking'])
 
 # Предсказание цены
-price_prediction = model_price.predict(user_data_encoded)
+price_prediction = model_price.predict(price_df)
 
 st.subheader('Price prediction')
 st.write(price_prediction)
