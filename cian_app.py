@@ -81,6 +81,13 @@ def user_input_features():
     
     return pd.DataFrame(user_data_list)
 
+st.title('Оценка участка застройки')
+user_data = user_input_features()
+
+# Displaying the folium map
+m = folium.Map(location=[user_data['geo_latitude'][0], user_data['geo_longitude'][0]], zoom_start=15)
+folium.Marker([user_data['geo_latitude'][0], user_data['geo_longitude'][0]]).add_to(m)
+stf.folium_static(m)
 
 # прогноз
 material_prediction = model_material.predict(user_data)
@@ -114,14 +121,6 @@ for room_type, price, material_type, decoration, parking in zip(room_types, pric
         housing_class = 'Бизнес'
     else:
         housing_class = 'Комфорт'
-
-st.title('Оценка участка застройки')
-user_data = user_input_features()
-
-# Displaying the folium map
-m = folium.Map(location=[user_data['geo_latitude'][0], user_data['geo_longitude'][0]], zoom_start=15)
-folium.Marker([user_data['geo_latitude'][0], user_data['geo_longitude'][0]]).add_to(m)
-stf.folium_static(m)
 
 st.markdown(f'<h4>Класс жилья</h4>', unsafe_allow_html=True)
 st.write(housing_class)
