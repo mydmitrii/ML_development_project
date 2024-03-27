@@ -20,6 +20,8 @@
 		<location id="365">Боровское шоссе</location>
 		<location id="366">Новопеределкино</location>
 		<location id="367">Рассказовка</location>
+		<location id="535">Аэропорт Внуково</location>
+		<location id="536">Пыхтино</location>
 	</line>
 	<line id="28" name="Некрасовская" color="DB0A5B">
 		<location id="1">Авиамоторная</location>
@@ -185,6 +187,7 @@
 		<location id="234">Волоколамская</location>
 		<location id="235">Митино</location>
 		<location id="244">Пятницкое шоссе</location>
+		<location id="539">Гольяново</location>
 	</line>
 	<line id="11" name="Таганско-Краснопресненская" color="94007C">
 		<location id="12">Баррикадная</location>
@@ -211,7 +214,7 @@
 		<location id="275">Спартак</location>
 		<location id="282">Котельники</location>
 	</line>
-	<line id="30" name="Белорусско-Савеловский диаметр" color="DE9C4E">
+	<line id="30" name="Белорусско-Савеловский диаметр (МЦД-1)" color="DE9C4E">
 		<location id="14">Беговая</location>
 		<location id="15">Белорусская</location>
 		<location id="60">Кунцевская</location>
@@ -251,6 +254,7 @@
 		<location id="103">Проспект Мира</location>
 		<location id="123">Таганская</location>
 		<location id="159">Краснопресненская</location>
+		<location id="540">Суворовская</location>
 	</line>
 	<line id="10" name="Сокольническая" color="CF0000">
 		<location id="18">Библиотека им. Ленина</location>
@@ -279,6 +283,7 @@
 		<location id="378">Прокшино</location>
 		<location id="379">Ольховая</location>
 		<location id="380">Коммунарка</location>
+		<location id="538">Потапово</location>
 	</line>
 	<line id="8" name="Люблинско-Дмитровская" color="8AD02A">
 		<location id="22">Братиславская</location>
@@ -294,7 +299,7 @@
 		<location id="119">Сретенский бульвар</location>
 		<location id="130">Трубная</location>
 		<location id="150">Чкаловская</location>
-		<location id="236">Марьина роща</location>
+		<location id="236">Марьина Роща</location>
 		<location id="237">Достоевская</location>
 		<location id="238">Шипиловская</location>
 		<location id="239">Зябликово</location>
@@ -305,6 +310,9 @@
 		<location id="353">Верхние Лихоборы</location>
 		<location id="354">Селигерская</location>
 		<location id="398">Яхромская</location>
+		<location id="533">Физтех</location>
+		<location id="534">Лианозово</location>
+		<location id="574">Южный порт</location>
 	</line>
 	<line id="2" name="Бутовская" color="ACBFE3">
 		<location id="23">Бульвар Адмирала Ушакова</location>
@@ -349,7 +357,7 @@
 		<location id="453">Шелепиха</location>
 		<location id="454">Марьина Роща</location>
 	</line>
-	<line id="32" name="Курско-Рижский диаметр" color="BD748F">
+	<line id="32" name="Курско-Рижский диаметр (МЦД-2)" color="BD748F">
 		<location id="37">Дмитровская</location>
 		<location id="50">Комсомольская</location>
 		<location id="61">Курская</location>
@@ -360,7 +368,6 @@
 		<location id="144">Царицыно</location>
 		<location id="154">Щукинская</location>
 		<location id="234">Волоколамская</location>
-		<location id="292">Стрешнево</location>
 		<location id="304">Новохохловская</location>
 		<location id="415">Нахабино</location>
 		<location id="416">Аникеевка</location>
@@ -388,6 +395,8 @@
 		<location id="438">Остафьево</location>
 		<location id="439">Курьяново</location>
 		<location id="441">Площадь трёх вокзалов</location>
+		<location id="525">Реутов</location>
+		<location id="537">Марьина Роща</location>
 	</line>
 	<line id="18" name="Монорельс" color="0177BF">
 		<location id="128">Тимирязевская</location>
@@ -396,5 +405,124 @@
 		<location id="278">Улица Академика Королёва</location>
 		<location id="279">Телецентр</location>
 		<location id="280">Улица Милашенкова</location>
+	</line>
+	<line id="33" name="Ленинградско-Казанский диаметр (МЦД-3)" color="E95B0C">
+		<location id="455">Зеленоград — Крюково</location>
+		<location id="456">Фирсановская</location>
+		<location id="457">Сходня</location>
+		<location id="458">Подрезково</location>
+		<location id="459">Новоподрезково</location>
+		<location id="460">Молжаниново</location>
+		<location id="461">Химки</location>
+		<location id="462">Левобережная</location>
+		<location id="463">Ховрино</location>
+		<location id="464">Грачёвская</location>
+		<location id="465">Моссельмаш</location>
+		<location id="466">Лихоборы</location>
+		<location id="467">Петровско-Разумовская</location>
+		<location id="468">Останкино</location>
+		<location id="470">Электрозаводская</location>
+		<location id="471">Сортировочная</location>
+		<location id="472">Авиамоторная</location>
+		<location id="473">Андроновка</location>
+		<location id="474">Перово</location>
+		<location id="475">Плющево</location>
+		<location id="476">Вешняки</location>
+		<location id="477">Выхино</location>
+		<location id="478">Косино</location>
+		<location id="479">Ухтомская</location>
+		<location id="480">Люберцы</location>
+		<location id="481">Панки</location>
+		<location id="482">Томилино</location>
+		<location id="483">Красково</location>
+		<location id="484">Малаховка</location>
+		<location id="485">Удельная</location>
+		<location id="486">Быково</location>
+		<location id="487">Ильинская</location>
+		<location id="488">Отдых</location>
+		<location id="489">Кратово</location>
+		<location id="490">Есенинская</location>
+		<location id="491">Фабричная</location>
+		<location id="492">Раменское</location>
+		<location id="493">Ипподром</location>
+	</line>
+	<line id="34" name="Калужско-Нижегородский диаметр (МЦД-4)" color="40B280">
+		<location id="494">Апрелевка</location>
+		<location id="495">Победа</location>
+		<location id="496">Крёкшино</location>
+		<location id="497">Санино</location>
+		<location id="498">Кокошкино</location>
+		<location id="499">Толстопальцево</location>
+		<location id="500">Лесной Городок</location>
+		<location id="501">Внуково</location>
+		<location id="502">Мичуринец</location>
+		<location id="503">Переделкино</location>
+		<location id="504">Солнечная</location>
+		<location id="505">Мещерская</location>
+		<location id="506">Очаково</location>
+		<location id="507">Аминьевская</location>
+		<location id="508">Матвеевская</location>
+		<location id="509">Минская</location>
+		<location id="510">Поклонная</location>
+		<location id="511">Кутузовская</location>
+		<location id="512">Тестовская</location>
+		<location id="513">Беговая</location>
+		<location id="514">Белорусская</location>
+		<location id="515">Савёловская</location>
+		<location id="516">Марьина Роща</location>
+		<location id="517">Рижская</location>
+		<location id="518">Площадь трёх вокзалов</location>
+		<location id="519">Курская</location>
+		<location id="520">Серп и Молот</location>
+		<location id="521">Нижегородская</location>
+		<location id="522">Чухлинка</location>
+		<location id="523">Кусково</location>
+		<location id="524">Новогиреево</location>
+		<location id="526">Никольское</location>
+		<location id="527">Салтыковская</location>
+		<location id="528">Кучино</location>
+		<location id="529">Ольгино</location>
+		<location id="530">Железнодорожная</location>
+		<location id="531">Реутов</location>
+		<location id="532">Новопеределкино</location>
+	</line>
+	<line id="35" name="Троицкая" color="03795F">
+		<location id="541">Вавиловская</location>
+		<location id="542">Летово</location>
+		<location id="543">Тютчевская</location>
+		<location id="544">Бачуринская</location>
+		<location id="545">Корниловская</location>
+		<location id="546">Сосенки</location>
+		<location id="547">Десна</location>
+		<location id="548">Новаторская</location>
+		<location id="549">Университет Дружбы Народов</location>
+		<location id="550">Генерала Тюленева</location>
+		<location id="551">Ватутинки</location>
+		<location id="552">Троицк</location>
+		<location id="553">Кедровая</location>
+		<location id="554">Крымская</location>
+		<location id="555">Академическая</location>
+		<location id="556">ЗИЛ</location>
+		<location id="557">Коммунарка</location>
+	</line>
+	<line id="36" name="Рублёво-Архангельская" color="27303F">
+		<location id="558">Бульвар Генерала Карбышева</location>
+		<location id="559">Народное Ополчение</location>
+		<location id="560">Звенигородская</location>
+		<location id="561">Серебряный Бор</location>
+		<location id="562">Липовая Роща</location>
+		<location id="563">Строгино</location>
+	</line>
+	<line id="37" name="Бирюлёвская" color="AC1753">
+		<location id="564">Бирюлёво</location>
+		<location id="565">Каспийская</location>
+		<location id="566">Лебедянская</location>
+		<location id="567">Остров мечты</location>
+		<location id="568">ЗИЛ</location>
+		<location id="569">Кленовый бульвар</location>
+		<location id="570">Липецкая</location>
+		<location id="571">Кавказский бульвар</location>
+		<location id="572">Курьяново</location>
+		<location id="573">Москворечье</location>
 	</line>
 </metro>
