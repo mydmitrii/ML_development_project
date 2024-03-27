@@ -9,16 +9,16 @@ from bs4 import BeautifulSoup
 import folium
 
 # загрузка моделей
-with open(os.path.join(models, 'model_price.pkl'), 'rb') as f:
+with open(os.path.join('models', 'model_price.pkl'), 'rb') as f:
     model_price = pickle.load(f)
     
-with open(os.path.join(models, 'model_material.pkl'), 'rb') as f:
+with open(os.path.join('models', 'model_material.pkl'), 'rb') as f:
     model_material = pickle.load(f)
 
-with open(os.path.join(models, 'model_decoration.pkl'), 'rb') as f:
+with open(os.path.join('models', 'model_decoration.pkl'), 'rb') as f:
     model_decoration = pickle.load(f)
 
-with open(os.path.join(models, 'model_parking.pkl'), 'rb') as f:
+with open(os.path.join('models', 'model_parking.pkl'), 'rb') as f:
     model_parking = pickle.load(f)
 
 # загрузка словаря метро
